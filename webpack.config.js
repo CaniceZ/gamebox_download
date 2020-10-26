@@ -10,11 +10,12 @@ const url = urlMap[original[original.findIndex(item => item === '-api') + 1]]
 console.log(url)
 module.exports = {
   entry:{
-    index: './src/index.js' //['babel-polyfill', './src/index.js']
+    index: './src/index.js', //['babel-polyfill', './src/index.js']
+    index_pc: './src/index_pc.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'js/main.[hash:8].js'
+    filename: 'js/[name][hash:8].js'
   },
   module:{
     rules:[
@@ -66,7 +67,12 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: 'public/index.html',
       filename: 'index.html',
-      inject: true
+      chunks: ['index'],
+    }),
+    new HtmlWebPackPlugin({
+      chunks: ['index_pc'],
+      filename: "index_pc.html",
+      template: "public/index_pc.html"
     }),
     new CleanWebpackPlugin(), // 清空项目根目录下dist
     new MiniCssExtractPlugin({
