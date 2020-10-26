@@ -1,7 +1,7 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const webpack = require("webpack");
-// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require('path');
 const urlMap = require('./config')
 console.log(urlMap)
@@ -39,13 +39,13 @@ module.exports = {
       {
         test: /\.css/,
         use: [
-          // {
-          //   loader:MiniCssExtractPlugin.loader,
-          //   options:{
-          //     publicPath: "../"
-          //   }
-          // },
-          'style-loader',
+          {
+            loader:MiniCssExtractPlugin.loader,
+            options:{
+              publicPath: "../"
+            }
+          },
+          // 'style-loader',
           'css-loader'
         ],
       },
@@ -56,7 +56,7 @@ module.exports = {
           limit: 10000,
           name: "[name].[hash:4].[ext]",
           outputPath: "./img",//打包后图片文件输出路径
-          publicPath:'./img',
+          publicPath:'../img',
           esModule: false
         }
       },
@@ -69,13 +69,13 @@ module.exports = {
       inject: true
     }),
     new CleanWebpackPlugin(), // 清空项目根目录下dist
-    // new MiniCssExtractPlugin({
-    //   filename: "css/[name].css",
-    //   chunkFilename: "[id].css"
-    //   }),
+    new MiniCssExtractPlugin({
+      filename: "css/[name].[hash:6].css",
+      chunkFilename: "[id].css"
+      }),
     new webpack.DefinePlugin({
       'API_URL': JSON.stringify(url)
-    })
+    }),
   ],
   devServer: {
     contentBase: './dist',
@@ -91,5 +91,5 @@ module.exports = {
         }
       }
     },
-  }
+  },
 }
