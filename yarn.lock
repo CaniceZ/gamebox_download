@@ -1267,6 +1267,18 @@ atob@^2.1.2:
   resolved "https://registry.npm.taobao.org/atob/download/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha1-bZUX654DDSQ2ZmZR6GvZ9vE1M8k=
 
+autoprefixer@^10.0.1:
+  version "10.0.1"
+  resolved "https://registry.npm.taobao.org/autoprefixer/download/autoprefixer-10.0.1.tgz?cache=0&sync_timestamp=1601167582745&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fautoprefixer%2Fdownload%2Fautoprefixer-10.0.1.tgz#e2d9000f84ebd98d77b7bc16f8adb2ff1f7bb946"
+  integrity sha1-4tkAD4Tr2Y13t7wW+K2y/x97uUY=
+  dependencies:
+    browserslist "^4.14.5"
+    caniuse-lite "^1.0.30001137"
+    colorette "^1.2.1"
+    normalize-range "^0.1.2"
+    num2fraction "^1.2.2"
+    postcss-value-parser "^4.1.0"
+
 axios@^0.20.0:
   version "0.20.0"
   resolved "https://registry.npm.taobao.org/axios/download/axios-0.20.0.tgz?cache=0&sync_timestamp=1597979633356&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Faxios%2Fdownload%2Faxios-0.20.0.tgz#057ba30f04884694993a8cd07fa394cff11c50bd"
@@ -1487,7 +1499,7 @@ browserify-zlib@^0.2.0:
   dependencies:
     pako "~1.0.5"
 
-browserslist@^4.12.0, browserslist@^4.8.5:
+browserslist@^4.12.0, browserslist@^4.14.5, browserslist@^4.8.5:
   version "4.14.5"
   resolved "https://registry.npm.taobao.org/browserslist/download/browserslist-4.14.5.tgz?cache=0&sync_timestamp=1600993129773&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fbrowserslist%2Fdownload%2Fbrowserslist-4.14.5.tgz#1c751461a102ddc60e40993639b709be7f2c4015"
   integrity sha1-HHUUYaEC3cYOQJk2ObcJvn8sQBU=
@@ -1599,6 +1611,11 @@ caniuse-lite@^1.0.30001135:
   version "1.0.30001144"
   resolved "https://registry.npm.taobao.org/caniuse-lite/download/caniuse-lite-1.0.30001144.tgz?cache=0&sync_timestamp=1601966109474&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcaniuse-lite%2Fdownload%2Fcaniuse-lite-1.0.30001144.tgz#bca0fffde12f97e1127a351fec3bfc1971aa3b3d"
   integrity sha1-vKD//eEvl+ESejUf7Dv8GXGqOz0=
+
+caniuse-lite@^1.0.30001137:
+  version "1.0.30001151"
+  resolved "https://registry.npm.taobao.org/caniuse-lite/download/caniuse-lite-1.0.30001151.tgz#1ddfde5e6fff02aad7940b4edb7d3ac76b0cb00b"
+  integrity sha1-Hd/eXm//AqrXlAtO2306x2sMsAs=
 
 chalk@^2.0.0, chalk@^2.4.2:
   version "2.4.2"
@@ -3872,6 +3889,11 @@ normalize-path@^3.0.0, normalize-path@~3.0.0:
   resolved "https://registry.npm.taobao.org/normalize-path/download/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
   integrity sha1-Dc1p/yOhybEf0JeDFmRKA4ghamU=
 
+normalize-range@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.npm.taobao.org/normalize-range/download/normalize-range-0.1.2.tgz#2d10c06bdfd312ea9777695a4d28439456b75942"
+  integrity sha1-LRDAa9/TEuqXd2laTShDlFa3WUI=
+
 npm-run-path@^2.0.0:
   version "2.0.2"
   resolved "https://registry.npm.taobao.org/npm-run-path/download/npm-run-path-2.0.2.tgz#35a9232dfa35d7067b4cb2ddf2357b1871536c5f"
@@ -3885,6 +3907,11 @@ nth-check@~1.0.1:
   integrity sha1-sr0pXDfj3VijvwcAN2Zjuk2c8Fw=
   dependencies:
     boolbase "~1.0.0"
+
+num2fraction@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.npm.taobao.org/num2fraction/download/num2fraction-1.2.2.tgz#6f682b6a027a4e9ddfa4564cd2589d1d4e669ede"
+  integrity sha1-b2gragJ6Tp3fpFZM0lidHU5mnt4=
 
 object-assign@^4.0.1, object-assign@^4.1.1:
   version "4.1.1"

@@ -4,14 +4,17 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open"
+    "build2": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open",
+    "dev": "webpack-dev-server --mode development --config webpack/webpack.config.dev.js --open",
+    "build": "webpack --mode production --config webpack/webpack.config.prod.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@babel/polyfill": "^7.11.5",
     "@babel/runtime": "^7.11.2",
+    "autoprefixer": "^10.0.1",
     "axios": "^0.20.0",
     "css-loader": "^5.0.0",
     "expose-loader": "^1.0.1",

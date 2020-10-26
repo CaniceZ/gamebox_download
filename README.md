@@ -6,17 +6,17 @@
 
 1.yarn启动
 ```bash
-yarn start -url release
+yarn dev -api release
 ```
 2.npm启动
 ```bash
-npm run start -url release
+npm run dev -api release
 ```
 3.yarn打包
 ```bash
-yarn build -url release
+yarn build -api release
 ```
 4.npm打包
 ```bash
-npm run build -url release
+npm run build -api release
 ```
