@@ -2,10 +2,13 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const webpack = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
 const urlMap = require('../config')
 const original = JSON.parse(process.env.npm_config_argv).original
-const url = urlMap[original[original.findIndex(item => item === '-api') + 1]]
+const url = urlMap[original[original.findIndex(item => item === '-api') + 1]]['req_api']
+const andriod_url = urlMap[original[original.findIndex(item => item === '-api') + 1]]['andriod_api']
+const base_url=urlMap[original[original.findIndex(item => item === '-api') + 1]]['base_url']
 module.exports = {
   entry:{
     index: './src/index.js', //['babel-polyfill', './src/index.js']
@@ -75,6 +78,12 @@ module.exports = {
     ]
   },
   plugins:[
+    new CopyWebpackPlugin({patterns:[
+      {
+          from: path.resolve(__dirname, '../public/static'),
+          to: ''
+      }
+]}),
     new HtmlWebPackPlugin({
       template: 'public/index.html',
       filename: 'index.html',
@@ -91,7 +100,9 @@ module.exports = {
       chunkFilename: "[id].css"
       }),
     new webpack.DefinePlugin({
-      'API_URL': JSON.stringify(url)
+      'API_URL': JSON.stringify(url),
+      'ANDRIOD_URL':JSON.stringify(andriod_url),
+      'BASE_URL':JSON.stringify(base_url)
     }),
   ],
   devServer: {

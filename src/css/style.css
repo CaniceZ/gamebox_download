@@ -3,80 +3,178 @@
     margin: 0;
     padding: 0;
 }
+
 .retive {
     position: relative;
 }
+
 .bg-img {
     width: 100vw;
-    height: 100vh;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: top center;
-    /* background-color: #fff; */
 }
 
 .bg-img1 {
-    background-image: url('../img/01.jpg');
+    height: calc(693 / 778 *100vw);
+    background-image: url('../img/5u玩盒子下载页-1/1.png');
+    background-position: top center;
 }
-.bg-img2 {
-    background-image: url('../img/02.jpg');
-}
-.bg-img3 {
-    background-image: url('../img/03.jpg');
-}
-.bg-img4 {
-    background-image: url('../img/04.jpg');
-}
-.bg-img5 {
-    background-image: url('../img/05.jpg');
-}
-/* #fullpage{
 
-} */
-.section{
-    background-color: #000;
-}
-.section-img {
-    width: 66vw;
+.bg-img2 {
+    height: calc(528 / 778 *100vw);
+    background-image: url('../img/5u玩盒子下载页-1/2.png');
+    background-position: bottom center;
     position: absolute;
-    top: 96px;
+    bottom: 0;
+}
+
+.bg-img3 {
+    height: calc(389 / 778 *100vw);
+    background-image: url('../img/5u玩盒子下载页-2/1.png');
+    background-position: top center;
+}
+
+.bg-img4 {
+    height: calc(801 / 778 *100vw);
+    background-image: url('../img/5u玩盒子下载页-2/2.png');
+    background-position: bottom center;
+    position: absolute;
+    bottom: 0;
+}
+
+.bg-img5 {
+    height: calc(444 / 778 *100vw);
+    background-image: url('../img/5u玩盒子下载页-3/1.png');
+    background-position: top center;
+}
+
+.bg-img6 {
+    height: calc(718 / 778 *100vw);
+    background-image: url('../img/5u玩盒子下载页-3/2.png');
+    background-position: bottom center;
+    position: absolute;
+    bottom: 0;
+}
+
+.bg-img7 {
+    height: calc(669 /778 *100vw);
+    background-image: url('../img/5u玩盒子下载页-4/1.png');
+    background-position: top center;
+}
+
+.bg-img8 {
+    height: calc(585 /778 *100vw);
+    background-image: url('../img/5u玩盒子下载页-4/2.png');
+    background-position: bottom center;
+    position: absolute;
+    bottom: 0;
+}
+
+.bg-img9 {
+    background-image: url('../img/5u玩盒子下载页-5/1.png');
+    background-position: top center;
+    height: calc(1100/ 779 *100vw);
+    /* height: 88vh; */
+}
+
+.section-img1 {
+    height: calc(959 / 1387 *100vh);
+    width: calc(959 / 1387 * 779 / 959 *100vh);
+    top: calc(239/ 1387 *100vh);
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
-@media screen and (min-width: 450px) {
-    .section {
-        display: flex;
-        justify-content: center;
+
+.section-img2 {
+    position: absolute;
+    height: calc(959 / 1387 *100vh);
+    width: calc(959 / 1387 * 779 / 959 *100vh);
+    top: calc(283/ 1387 *100vh);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-img3 {
+    position: absolute;
+    height: calc(959 / 1387 *100vh);
+    width: calc(959 / 1387 * 779 / 959 *100vh);
+    top: calc(282/ 1387 *100vh);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-img4 {
+    position: absolute;
+    height: calc(959 / 1387 *100vh);
+    width: calc(959 / 1387 * 779 / 959 *100vh);
+    top: calc(331/ 1387 *100vh);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+@media screen and (min-width: 750px) {
+    .bg-img9 {
+        height: calc(1100/ 779 *100vh);
+        /* height: 88vh; */
     }
 
-}
-@media screen and (max-width: 376px) {
-    .section {
-        display: flex;
-        background-color: #fff;
+    .section-img1 {
+        top: calc(280/ 1387 *100vh);
     }
 
+    .section-img2 {
+        top: calc(359/ 1387 *100vh);
+    }
+
+    .section-img3 {
+        top: calc(339/ 1387 *100vh)
+    }
+
+    .section-img4 {
+        top: calc(420/ 1387 *100vh);
+
+    }
 }
+
+.section-img5 {
+    width: 100%;
+    height: auto;
+}
+
+.tip {
+    position: absolute;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    bottom: 16%;
+    width: 100%
+        /* left: 30%;
+    transform: translateX(-30%); */
+}
+
 .footer {
     width: 100vw;
     position: fixed;
-    bottom: 5%;
+    bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.footer > div:first-of-type {
-    width: 186px;
-    height: 38px;
+.footer>div:first-of-type {
+    width: calc(186/ 340 *100vw);
+    height: calc(186/ 340 *38/186 *100vw);
     background: linear-gradient(90deg, #244DFF 0%, #24BAFE 100%);
-    border-radius: 19px;
-    line-height: 38px;
+    border-radius: 25px;
+    line-height: calc(186/ 340 *38/186 *100vw);
     font-size: 20px;
     text-align: center;
     font-weight: bold;
     color: #FFFFFF;
 }
+
 .footer .footer-arrow {
     width: 50px;
     height: 17px;
@@ -84,6 +182,7 @@
     position: relative;
     top: 13px;
 }
+
 .footer .footer-arrow div {
     position: absolute;
     left: 50%;
@@ -94,6 +193,7 @@
     border: 3px solid #253B8E;
     border-radius: 2px;
 }
+
 .popup-overlay {
     position: fixed;
     top: 0;
@@ -107,4 +207,77 @@
     -webkit-transform-origin: top;
     -ms-transform-origin: top;
     overflow: hidden;
+
 }
+
+#weixin-tip {
+    position: fixed;
+    z-index: 2;
+}
+
+.close {
+    color: red;
+    border-radius: 12px;
+    line-height: 20px;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    font-size: 28px;
+    position: absolute;
+    color: #fff;
+    right: 7px;
+    top: 0px;
+    z-index: 3;
+
+}
+
+/* use cross as close button */
+.close::before {
+    content: "\2716";
+}
+
+.guide-wrap {
+    /* padding: 0px 26px 1rem;
+    overflow: hidden;
+    width: 300px;
+    height: 250px;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    margin-left: -150px;
+    display: none; */
+}
+
+.swiper-pagination {
+    position: absolute;
+}
+
+.guide-wrap .swiper-slide {
+    border: none;
+}
+
+.swiper-slide {
+    border: 2px solid #d18b1c;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.guide-container {
+    width: 320px;
+    height: 250px;
+    position: fixed;
+    top: 20%;
+    background-color: #fff;
+    overflow: hidden;
+    left: 50%;
+    margin-left: -150px;
+    border-radius: 10px;
+    z-index: 999999;
+    opacity: 0
+}
+
+/* .popup-guide.outviewport {
+    left: -9999px;
+} */

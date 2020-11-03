@@ -2,28 +2,60 @@
 <html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
-    <title>无忧玩游戏盒子</title>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta name="browsermode" content="application">
+    <!-- <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>玩游戏上无忧玩</title>
+    <meta itemprop="name" content="上线领福利，欧皇就是你！不用天天肝，只要无忧玩！游戏选精品，无忧最懂您"/>
+    <meta itemprop="description" name="description" content="无忧玩游戏盒子，玩手游必备省钱神器，最专业的游戏充值折扣福利平台，超强返利，为玩家提供免费的海量优质手游、专业高效服务 官方授权超低价  权威保障、即充即到"/>
+    <meta itemprop="image" content="/ico.png" />
+    <link rel="shortcut icon" href="/icon_32px.ico">
+    
 </head>
 
 <body>
 <div id="fullpage">
     <div class="section retive">
         <div class="bg-img bg-img1"></div>
-    </div>
-    <div class="section">
         <div class="bg-img bg-img2"></div>
-    </div>
-    <div class="section">
+        <div class="section-img1">
+            <img src="<%= require( '../src/img/5u玩盒子下载页-1/3.png') %>" alt="" class="section-img5">
+        </div>
+</div>
+    <div class="section retive">
         <div class="bg-img bg-img3"></div>
-    </div>
-    <div class="section">
         <div class="bg-img bg-img4"></div>
+        <div class="section-img2">
+            <img src="<%= require( '../src/img/5u玩盒子下载页-2/3.png') %>" alt="" class="section-img5">
+        </div>
     </div>
-    <div class="section">
+    <div class="section retive">
         <div class="bg-img bg-img5"></div>
+        <div class="bg-img bg-img6"></div>
+        <div class="section-img3">
+            <img src="<%= require( '../src/img/5u玩盒子下载页-3/3.png') %>" alt="" class="section-img5">
+        </div>
+    </div>
+    <div class="section retive">
+        <div class="bg-img bg-img7"></div>
+        <div class="bg-img bg-img8"></div>
+        <div class="section-img4">
+            <img src="<%= require( '../src/img/5u玩盒子下载页-4/3.png') %>" alt="" class="section-img5">
+        </div>
+    </div>
+    <div class="section retive">
+        <div class="bg-img bg-img9"></div>
+        <div class="tip">
+            <p>ICP证：赣B2-20170070   赣ICP备17006458号</p>
+            <p>赣公网安备 43070202000397号</p>
+            <p>Copyright  2012-2017 江西神起信息技术有限公司 All rights reserved.</p>
+        </div>
     </div>
 </div>
 <div class="footer downLoadGame">
@@ -32,10 +64,32 @@
         <div></div>
     </div>
 </div>
-<div id="weixin-tip" style="display:none;width:100%;position:fixed;top:0;left:0;z-index: 1111111111;background-color:rgba(0,0,0,0.9)">
+<div id="weixin-tip" style="display:none;width:100%;position:fixed;top:0;left:0;z-index:2;background-color:rgba(0,0,0,0.9)">
     <p style="width: 100%;text-align: center"><img id="img" src="<%= require( '../src/img/tip.png') %>" width="100%"></p>
+    <!-- <div id="konw" 
+    style="height: 50px;
+    width: 127px;
+    background-color:rgba(0,0,0,0.9);
+    position: fixed;
+    top: 34%;
+    left: 50%;
+    margin-left: -63.5px;
+    opacity:0;"></div> -->
 </div>
-<div class="popup-overlay" id="popup-overlay"></div>
+<div class="popup-overlay" id="popup-overlay" style="display:none"></div>
+<div class="guide-wrap">
+    <div class="guide-container">
+        <div class="swiper-wrapper">
+       <div class="swiper-slide"><img src="<%= require( '../src/img/01.jpg') %>" alt="" /></div>
+       <div class="swiper-slide"><img src="<%= require( '../src/img/02.jpg') %>" alt="" /></div>
+       <div class="swiper-slide"><img src="<%= require( '../src/img/03.jpg') %>" alt="" /></div>
+       <div class="swiper-slide"><img src="<%= require( '../src/img/04.jpg') %>" alt="" /></div>
+       <div class="swiper-slide"><img src="<%= require( '../src/img/05.jpg') %>" alt="" /></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<!-- <div class="close" style="display:none"></div> -->
 </body>
 
 </html>
