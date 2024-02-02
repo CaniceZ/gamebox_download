@@ -9,6 +9,7 @@ const original = JSON.parse(process.env.npm_config_argv).original
 const url = urlMap[original[original.findIndex(item => item === '-api') + 1]]['req_api']
 const andriod_url = urlMap[original[original.findIndex(item => item === '-api') + 1]]['andriod_api']
 const base_url=urlMap[original[original.findIndex(item => item === '-api') + 1]]['base_url']
+console.log(andriod_url,'2333');
 module.exports = {
   entry:{
     index: './src/index.js', //['babel-polyfill', './src/index.js']
@@ -16,6 +17,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, '../dist'),
+    publicPath: '/aaa/',
     filename: 'js/[name][hash:8].js'
   },
   module:{
@@ -71,7 +73,7 @@ module.exports = {
           limit: 10000,
           name: "[name].[hash:4].[ext]",
           outputPath: "./img",//打包后图片文件输出路径
-          publicPath:'../img',
+          publicPath:'/aaa/img',
           esModule: false
         }
       },

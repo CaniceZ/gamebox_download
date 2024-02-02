@@ -17,6 +17,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/aaa/',
     filename: 'js/[name][hash:8].js'
   },
   module:{
@@ -72,7 +73,7 @@ module.exports = {
           limit: 10000,
           name: "[name].[hash:4].[ext]",
           outputPath: "./img",//打包后图片文件输出路径
-          publicPath:'../img',
+          publicPath:'/aaa/img',
           esModule: false
         }
       },
@@ -107,6 +108,7 @@ module.exports = {
   ],
   devServer: {
     contentBase: './dist',
+    publicPath: '/aaa/',
     host: '0.0.0.0',
     port: 3000,
     useLocalIp: true,
